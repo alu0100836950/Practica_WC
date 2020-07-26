@@ -5,16 +5,14 @@
     justify-content: center;
 }
 
-p{
+#text-select{
     text-align: center;
+    font-size: 30px;;
 }
 
 
 product-watch:hover{
 
     cursor: pointer;
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    -ms-transform: rotate(-7deg);
-    transform: rotate(-7deg);
+
 }

@@ -3,9 +3,6 @@ class NuevoProducto extends HTMLElement {
     constructor(){
         super();
 
-           
-       // this.attachShadow({mode: "open"});
- 
     }
 
     connectedCallback(){
