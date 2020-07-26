@@ -3,28 +3,35 @@ class NuevoProducto extends HTMLElement {
     constructor(){
         super();
 
+           
        // this.attachShadow({mode: "open"});
  
     }
 
     connectedCallback(){
         
+        const image = this.getAttribute('img');
+        const title = this.getAttribute('title');
+        const description = this.getAttribute('description');
+        const url_site = this.getAttribute('link-site');
+        const price = this.getAttribute('price');
+
         let div_product = document.createElement('div');
         div_product.innerHTML = `
 
           <div class="card grey align="center">
             <div class="card-image">
-                <img src="./img/GTS.jpg">
+                <img src="${image}">
             </div>
             <div class="card-content">
-              <span class="card-title">Amazfit GTS</span>
-              <p>Un reloj muy parecido al Apple Watch pero con una calidad/precio inmejorable </p>
+              <span class="card-title">${title}</span>
+              <p>${description}</p>
             </div>
 
             <div class="card-action center">
 
-              <a href="https://es.amazfit.com/gts.html">Oficial Site</a>
-              <a>Price 130€</a>
+              <a href="${url_site}">Oficial Site</a>
+              <a>Price ${price}</a>
             </div>
 
             <div class="card-reveal">
