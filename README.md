@@ -13,14 +13,14 @@ Para realizar esta práctica he seguido los siguientes pasos:
 
 ### Pagina Web Base
 
-- He creado un barra nav utilizando materialize. Desta forma rapida y sencila podemos obtener una barra de navegacion para poder visualizar como quedaría finalmente la página. Destacar que no tiene funcionalidad simplemente es a modo visual ya que lo importante es la parte central de la página.
+- He creado un **barra nav** utilizando materialize. Desta forma rapida y sencila podemos obtener una barra de navegacion. Destacar que no tiene funcionalidad simplemente es a modo visual ya que lo importante es la parte central de la página.
 
     ```html
     <!-- Navegacion-->
     <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo">Logo</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav" class="right hide-on-med-and-down">
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
             <li><a href="#">Link 3</a></li>
@@ -29,7 +29,7 @@ Para realizar esta práctica he seguido los siguientes pasos:
       </nav>
     ```
 
-- Por otro lado se ha creado un **footer* de la misma forma que la barra de navegacion, haciendo uso de materialize. 
+- Por otro lado se ha creado un **footer** de la misma forma que la barra de navegacion, haciendo uso de materialize. 
 
     ```html
     <!-- FOOTERR-->
@@ -64,7 +64,7 @@ Para realizar esta práctica he seguido los siguientes pasos:
 
 ### Creacion del Web Component
 
-Para la creación del WebComponent he creado un fichero *components.js* y en él crearemo una clase que va a extender de *HTMLElement*:
+Para la creación del WebComponent he creado un fichero *components.js* y en él se ha creado una clase que va a extender de *HTMLElement*:
 
 ```javascript
 class NuevoProducto extends HTMLElement {
@@ -145,7 +145,7 @@ Para verlo con más detalles analizemos algunos elementos importantes de este c�
 
     ```
     
-    - La creacion de un nuevo div que contiene el codigo que vamos a insertar:
+    - La creacion de un nuevo *div* que contiene el codigo que vamos a insertar:
 
     ```javascript
      let div_product = document.createElement('div');
@@ -186,7 +186,7 @@ Para verlo con más detalles analizemos algunos elementos importantes de este c�
     
     ```
 
-Con esto ya tendríamos nuestro prototipo de *card* para añadir a nuestra página web pero mieramente tenemos definirlo para poder utilizarlo. Tambien tenemos que tener cuenta que este fichero tenemos que añadirlo a nuestro *index.html* con la etiqueta *<script></script>*.
+Con esto ya tendríamos nuestro prototipo de *card* para añadir a nuestra página web pero primeramente tenemos que definirlo para poder utilizarlo. Tambien tenemos que tener cuenta que este fichero hay que añadirlo a nuestro *index.html* con la etiqueta *<script></script>*.
 
 Usaremos la siguiente para definir nuestro web component:
 
